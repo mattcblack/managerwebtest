@@ -22,4 +22,6 @@ before_script:
 - npm install
 - ng build --prod
 
-script: karma start config/karma.conf.js --single-run
+script:
+- ng test --single-run
+- ng e2e
